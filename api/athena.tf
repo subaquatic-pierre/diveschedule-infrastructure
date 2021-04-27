@@ -12,7 +12,7 @@ data "template_file" "lb_logs" {
 }
 
 resource "aws_athena_database" "lb_logs" {
-  name   = var.tags["diveschedule_project"]
+  name   = var.tags["Athena_Name"]
   bucket = aws_s3_bucket.lb_logs.id
 }
 
