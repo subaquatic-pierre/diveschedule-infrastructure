@@ -12,7 +12,7 @@ module "frontend_pipeline" {
   github_token        = var.github_token
   github_account      = var.github_account
   github_repo         = var.frontend_github_repo
-  codestar_connection = aws_codestarconnections_connection.django_react_github_connection.arn
+  codestar_connection = aws_codestarconnections_connection.diveschedule_github_connection.arn
 
   build_secrets = var.build_secrets
 
@@ -30,7 +30,7 @@ module "api_pipeline" {
   github_token        = var.github_token
   github_account      = var.github_account
   github_repo         = var.api_github_repo
-  codestar_connection = aws_codestarconnections_connection.django_react_github_connection.arn
+  codestar_connection = aws_codestarconnections_connection.diveschedule_github_connection.arn
 
   subnet_ids = var.subnet_ids
   region     = data.aws_region.current.name

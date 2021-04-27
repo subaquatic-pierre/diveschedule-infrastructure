@@ -13,8 +13,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "django-react-terraform-backend"
-    key    = "tfstate/django-react-terraform-backend"
+    bucket = "diveschedule-terraform-backend"
+    key    = "tfstate/diveschedule-terraform-backend"
     region = "us-east-1"
   }
 }

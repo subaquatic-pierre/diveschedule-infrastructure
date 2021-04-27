@@ -1,5 +1,5 @@
 data "aws_ecr_repository" "api_app" {
-  name = "django-graphql-api"
+  name = "${var.tags["Name"]}-api"
 }
 
 resource "aws_ecr_lifecycle_policy" "api_app" {
