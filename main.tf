@@ -52,7 +52,6 @@ module "pipelines" {
 
   aws_account_id       = var.aws_account_id
   tags                 = var.tags
-  github_token         = var.github_token
   github_account       = var.github_account
   api_ecr_repo_url     = var.api_ecr_app_uri
   frontend_github_repo = var.frontend_github_repo
