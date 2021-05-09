@@ -43,6 +43,7 @@ resource "aws_codebuild_project" "api_build" {
       AWS_SECRET_ACCESS_KEY   = var.build_secrets["AWS_SECRET_ACCESS_KEY"]
       DOCKER_USERNAME         = var.build_secrets["DOCKER_USERNAME"]
       DOCKER_PASSWORD         = var.build_secrets["DOCKER_PASSWORD"]
+      DB_ENGINE               = var.build_secrets["DB_ENGINE"]
     })
   }
 }
