@@ -44,6 +44,7 @@ resource "aws_codebuild_project" "api_build" {
       DOCKER_USERNAME         = var.build_secrets["DOCKER_USERNAME"]
       DOCKER_PASSWORD         = var.build_secrets["DOCKER_PASSWORD"]
       DB_ENGINE               = var.build_secrets["DB_ENGINE"]
+      CORS_ALLOW_ALL_ORIGINS  = var.build_secrets["CORS_ALLOW_ALL_ORIGINS"]
     })
   }
 }
